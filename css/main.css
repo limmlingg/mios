@@ -2,25 +2,52 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+.col {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-2 {
+	flex: 50%;
+	max-width: 100%
+}
+.col-3 {
+	flex: 33%;
+	max-width: 100%
+}
 .col-6 {
 	/* On larger devices, show 6 columns */
 	flex: 16.5%;
 	max-width: 100%
-}
-@media (max-width: 600px) {
-	.col-6 {
-		/* On smaller devices, show 3 or fewer columns */
-		flex: 33%;
-		max-width: 100%;
-	}
 }
 
 .header {
     text-align: center
 }
 
+.elevator {
+	margin: 0 20% 0 20%;
+}
+
 .section {
 	display: flex;
 	flex-wrap: wrap;
 	padding: 0 4px;
+}
+
+
+@media (max-width: 600px) {
+	.col-6 {
+		/* On smaller devices, show 3 or fewer columns */
+		flex: 33%;
+		max-width: 100%;
+	}
+	.elevator {
+		margin: 0;
+	}
 }
