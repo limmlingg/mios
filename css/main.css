@@ -1,51 +1,52 @@
 body {
 	font-family: 'Open Sans', sans-serif;
+	text-align: center;
 }
 
-.col {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.col-2 {
-	flex: 50%;
-	max-width: 100%
-}
-.col-3 {
-	flex: 33%;
-	max-width: 100%
-}
-.col-6 {
-	/* On larger devices, show 6 columns */
-	flex: 16.5%;
-	max-width: 100%
-}
-
-.header {
-    text-align: center
-}
-
-.elevator {
-	margin: 0 20% 0 20%;
+br {
+	display: block; 
+	content: "";
+	margin-top: 20px;
 }
 
 .section {
 	display: flex;
-	flex-wrap: wrap;
-	padding: 0 4px;
+	justify-content: center;
 }
 
 
-@media (max-width: 600px) {
-	.col-6 {
-		/* On smaller devices, show 3 or fewer columns */
-		flex: 33%;
-		max-width: 100%;
+.logo {
+	font-size: 250%
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+}
+
+.elevator {
+	margin: 5% 30%;
+}
+
+.header {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#header-hr {
+		border: 0;
+		height: 2px;
+		background-image: linear-gradient(to right, rgba(0, 0, 0, 0),  rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
+}
+
+@media (max-width: 800px) {
+	#logo {
+		order: -1;
+		width: 100%
+	}
+	.header {
+		flex-wrap: wrap;
 	}
 	.elevator {
 		margin: 0;
