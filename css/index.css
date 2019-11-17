@@ -1,0 +1,35 @@
+.elevator {
+	font-size: 150%;
+	margin: 5% 30%;
+}
+
+.portfolio {
+	justify-content: space-around;
+	margin: 0 10%;
+}
+
+.portfolio-art {
+	width: 50%;
+	margin: 0 2%;
+	text-align: left;
+}
+
+.portfolio-code {
+	width: 50%;
+	margin-right: 0 2%;
+	text-align: right;
+}
+
+@media (max-width: 800px) {
+	.elevator {
+		margin: 10% 0;
+	}
+	.portfolio-art {
+		margin-left: 0;
+		text-align: justify;
+	}
+	.portfolio-code {
+		margin-right: 0;
+		text-align: justify;
+	}
+}

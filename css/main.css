@@ -18,6 +18,7 @@ br {
 h2 {
 	font-family: 'Nanum Pen Script', cursive;
 	font-size: 300%;
+	font-weight: normal;
 	margin: 0;
 }
 
@@ -43,48 +44,17 @@ a:hover {
 	background-color: yellow;
 }
 
-
-
 .section.header li {
 	list-style-type: none;
 }
 
-.logo {
-	font-size: 250%
+#logo {
+	font-size: 350%;
+	font-weight: bold;
 }
 
-.footer {
-	list-style-type: none;
-	display: inline-flex;
-	justify-content: center;
-	padding-left: 0 !important;
-}
-
-.footer li {
-	padding-left: 5px;
-	padding-right: 5px;
-}
-
-.elevator {
-	font-size: 150%;
-	margin: 5% 30%;
-}
-
-.portfolio {
-	justify-content: space-around;
-	margin: 0 10%;
-}
-
-.portfolio-art {
-	width: 50%;
-	margin: 0 2%;
-	text-align: left;
-}
-
-.portfolio-code {
-	width: 50%;
-	margin-right: 0 2%;
-	text-align: right;
+#logo-a:hover {
+	background-color: transparent;
 }
 
 .header {
@@ -101,24 +71,26 @@ a:hover {
 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0),  rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
 }
 
+.footer {
+	list-style-type: none;
+	display: inline-flex;
+	justify-content: center;
+	padding-left: 0 !important;
+}
+
+.footer li {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
 @media (max-width: 800px) {
 	#logo {
+		margin: 3% 0%;
 		order: -1;
-		width: 100%
+		width: 100%;
 	}
 	.header {
 		flex-wrap: wrap;
-	}
-	.elevator {
-		margin: 10% 0;
-	}
-	.portfolio-art {
-		margin-left: 0;
-		text-align: justify;
-	}
-	.portfolio-code {
-		margin-right: 0;
-		text-align: justify;
 	}
 	.nav-icon {
 		width: 50px;

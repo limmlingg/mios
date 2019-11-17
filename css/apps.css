@@ -1,0 +1,9 @@
+.portfolio {
+    margin: 3% 20%;
+}
+
+@media (max-width: 800px) {
+	.portfolio {
+        margin: 3% 0%;
+    }
+}
