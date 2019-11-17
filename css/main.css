@@ -2,6 +2,12 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
 }
+::selection {
+	background: #acacac; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+	background: #acacac; /* Gecko Browsers */
+}
 
 br {
 	display: block; 
@@ -9,35 +15,90 @@ br {
 	margin-top: 20px;
 }
 
-.section {
-	display: flex;
-	justify-content: center;
+h2 {
+	font-family: 'Nanum Pen Script', cursive;
+	font-size: 300%;
+	margin: 0;
 }
 
+img {
+	width: 300px;
+}
+
+.nav-icon {
+	width: 100px;
+}
+
+.section {
+	display: flex;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+a:hover {
+	background-color: yellow;
+}
+
+
+
+.section.header li {
+	list-style-type: none;
+}
 
 .logo {
 	font-size: 250%
 }
 
 .footer {
-	display: flex;
+	list-style-type: none;
+	display: inline-flex;
 	justify-content: center;
+	padding-left: 0 !important;
+}
+
+.footer li {
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 .elevator {
+	font-size: 150%;
 	margin: 5% 30%;
+}
+
+.portfolio {
+	justify-content: space-around;
+	margin: 0 10%;
+}
+
+.portfolio-art {
+	width: 50%;
+	margin: 0 2%;
+	text-align: left;
+}
+
+.portfolio-code {
+	width: 50%;
+	margin-right: 0 2%;
+	text-align: right;
 }
 
 .header {
 	display: flex;
+	font-family: 'Nanum Pen Script', cursive;
+	font-size: 150%;
 	justify-content: space-around;
 	align-items: center;
 }
 
 #header-hr {
-		border: 0;
-		height: 2px;
-		background-image: linear-gradient(to right, rgba(0, 0, 0, 0),  rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
+	border: 0;
+	height: 2px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0),  rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
 }
 
 @media (max-width: 800px) {
@@ -49,6 +110,17 @@ br {
 		flex-wrap: wrap;
 	}
 	.elevator {
-		margin: 0;
+		margin: 10% 0;
+	}
+	.portfolio-art {
+		margin-left: 0;
+		text-align: justify;
+	}
+	.portfolio-code {
+		margin-right: 0;
+		text-align: justify;
+	}
+	.nav-icon {
+		width: 50px;
 	}
 }

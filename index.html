@@ -8,41 +8,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="css/main.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Nanum+Pen+Script&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="section header">
-            <p>Apps</p>
-            <p>Games</p>
-            <h1 id="logo">MIOS</h1>
-            <p>Creative</p>
-            <p>Resume</p>
+    <ul class="section header">
+        <li><a href="#"><img src="images/app.png" class="nav-icon"> <br> Apps</a></li>
+        <li><a href="#"><img src="images/games.png" class="nav-icon"> <br> Games</a></li>
+        <h1 id="logo">MIOS</h1>
+        <li><a href="#"><img src="images/creative.png" class="nav-icon"> <br> Creative</a></li>
+        <li><a href="#"><img src="images/resume.png" class="nav-icon"> <br> Resume</a></li>
         </div>
-    </div>
+    </ul>
 
-    <hr id="header-hr">
+    <!-- <hr id="header-hr"> -->
 
-    <!-- For elevator h3itch -->
-    <div class="section elevator">
-        <p>I'm a developer, puzzle enthusiast and artist in Singapore. I build things with user experiences in mind, and
-            sometimes just for fun. While I'm most familiar with Java and web design, my ability to pick up languages
-            and frameworks quickly make me a versatile developer, ready to tackle any project that comes my way.
-            Recently, I've also been exploring React Native and Firebase to branch out into app development.
-            
-            <br>
+    <!-- For elevator pitch -->
+    <div class="elevator">
+        <h2>I am...</h2>
+        <div class="section">
+            <p>a developer and digital artist from Singapore. While I'm most familiar with Java and web design, my
+                ability to pick up languages and frameworks quickly make me a versatile developer, ready to tackle any
+                project that comes my way.
 
-            My ultimate goal is to use my artistic skills alongside my development work. Or take over the world.<p>
+                <br>
+
+                My ultimate goal is to use my artistic skills alongside my development work. Or become a billionaire.<p>
+        </div>
     </div>
 
     <div class="section portfolio">
         <div class="portfolio-code">
-            <p>Lorem ipsum si amor init</p>
-            <p>See more apps</p>
+            <p>For a Music & Machines class, I coded a song to illustrate various sorting algorithms in Sonic Pi. I
+                added a somewhat musical interpretation of 5 sorting algorithms: insertion sort, bubble sort, quicksort,
+                mergesort and (everyone's favourite) bogosort.</p>
+            <hr>
+            <img src="images/bus_time_bot.jpg">
+            <p>Bus Time Bot is a telegram bot that tells you bus timings of the nearest bus stops based on the location
+                (GPS coordinates) you send to it.</p>
+            <button>See more apps</button>
         </div>
         <div class="portfolio-art">
-            <p>Lorem ipsum art is fake</p>
-            <p>See more art</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum</p>
+            <button>See more art</button>
         </div>
     </div>
 
@@ -50,11 +62,11 @@
         <h3>See my resume</h3>
     </div>
 
-    <div class="footer">
-        <p>Email</p>
-        <p>GitHub</p>
-        <p>LinkedIn</p>
-    </div>
+    <ul class="footer">
+        <li>Email</li>
+        <li>GitHub</li>
+        <li>LinkedIn</li>
+    </ul>
 
 </body>
 
