@@ -40,14 +40,29 @@ a {
 	text-transform: uppercase;
 }
 
-a:hover {
-	background-color: yellow;
-}
-
 a br {
 	display: block; 
 	content: "";
 	margin-top: 10px;
+}
+
+button {
+	background: transparent;
+	border-color: black;
+	border-radius: 30px;
+	border-width: 2px;
+	font-family: 'Nanum Pen Script', cursive;
+	font-size: 150%;
+	margin: 3%;
+	padding: 10px 30px;
+	/* text-transform: uppercase; */
+}
+
+button:hover {
+	color: white;
+	background: black;
+	border-color: white;
+	transition: all 0.2s linear;
 }
 
 .section.header li {
