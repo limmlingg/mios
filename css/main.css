@@ -51,18 +51,29 @@ button {
 	border-color: black;
 	border-radius: 30px;
 	border-width: 2px;
+	cursor: pointer;
 	font-family: 'Nanum Pen Script', cursive;
 	font-size: 150%;
-	margin: 3%;
+	font-weight: bold;
+	letter-spacing: 1.5px;
 	padding: 10px 30px;
-	/* text-transform: uppercase; */
+	text-transform: uppercase;
+	
+	/* Button "pop-up" effect */
+	box-shadow: 0 5px #333333;
+	margin-top: 15px;
+	margin-bottom: 25px;	
 }
 
 button:hover {
 	color: white;
 	background: black;
-	border-color: white;
 	transition: all 0.2s linear;
+
+	/* Button "pop-up" depressed effect */
+	box-shadow: 0 0 #333333;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .section.header li {
