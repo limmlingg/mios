@@ -1,4 +1,9 @@
-.resume {
-    display: flex;
-    align-content: space-around;
+#resume {
+    padding: 3% 30%;
+}
+
+@media (max-width: 800px) {
+	#resume {
+		padding: 3% 0%;
+	}
 }
