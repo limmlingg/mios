@@ -1,3 +1,21 @@
-#merch {
-    margin: 5% 0%;
+#s10e {
+    display: flex;
+}
+
+.s10e-wallpaper {
+    padding: 3% 5%;
+}
+
+.s10e-wallpaper img {
+    max-width: 100%;
+}
+
+#store {
+    padding: 3% 30%;
+}
+
+@media (max-width: 800px) {
+	#store {
+        padding: 3% 0%;
+    }
 }
