@@ -65,7 +65,7 @@ button {
 	margin-bottom: 25px;	
 }
 
-button:hover {
+button:hover, button:active {
 	color: white;
 	background: black;
 	transition: all 0.2s linear;
