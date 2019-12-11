@@ -5,7 +5,6 @@
 .portfolio-item {
     padding: 5% 0%;
     display: flex;
-    align-content: stretch;
 }
 
 .game-art-item {
@@ -27,5 +26,19 @@
 @media (max-width: 800px) {
 	.portfolio {
 		padding: 0% 0%;
-	}
+    }
+    
+    .portfolio-item {
+        display: block;
+    }
+
+    .game-art-item {
+        width: 100%;
+        padding: 5% 0%;
+    }
+
+    .video-item {
+        width: 100%;
+        padding: 5% 0%;
+    }
 }
