@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="css/main.css" rel="stylesheet">
-    <link href="css/code.css" rel="stylesheet">
+    <link href="css/creative.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Nanum+Pen+Script&display=swap" rel="stylesheet">
 </head>
 
@@ -23,22 +23,24 @@
     </ul>
 
     <div class="portfolio">
-        <div id="sorting-song">
-            <h2>Sorting Song</h2>
+        <div class="portfolio-item" id="sorting-song">
             <img src="images/sorting-song.jpg">
-            <p>An amalgamation of code and music. This is a musical interpretation of 5 sorting algorithms: insertion
-                sort, bubble sort, quicksort, mergesort and (everyone's favourite) bogosort. Made with Sonic Pi.
-            </p>
-            <audio controls>
-                <source src="images/sorting song.wav" type="audio/wav">
-                Please update your browser to listen to the song!
-            </audio>
+            <div>
+                <h2>Sorting Song</h2>
+                <p>An amalgamation of code and music. This is a musical interpretation of 5 sorting algorithms:
+                    insertion
+                    sort, bubble sort, quicksort, mergesort and (everyone's favourite) bogosort. Made with Sonic Pi.
+                </p>
+                <audio controls>
+                    <source src="images/sorting song.wav" type="audio/wav">
+                    Please update your browser to listen to the song!
+                </audio>
+            </div>
         </div>
         <hr>
-        <div id="illustration">
-            <h2>Game Art</h2>
-            <div id="moonchaser">
-                <h2>MoonChaser</h2>
+        <h2>Game Art</h2>
+        <div class="portfolio-item">
+            <div class="game-art-item">
                 <img src="images/moonchaser.jpg">
                 <p>MoonChaser is a atmospheric platforming game of a cat racing towards the moon.
                     <br>
@@ -46,8 +48,7 @@
                 </p>
                 <a href="https://snf.itch.io/moon-chaser" target="_blank"><button>Play MoonChaser</button></a>
             </div>
-            <div id="shift-happens">
-                <h2>Shift Happens</h2>
+            <div class="game-art-item">
                 <img src="images/shift-happens.jpg">
                 <p>Inspired by old-school arcade games, Shift Happens sports a retro pixel art style.
                     <br>
@@ -57,17 +58,24 @@
             </div>
         </div>
         <hr>
-        <div id="video">
-            <h2>Logo Animation</h2>
-            <video width="300" height="200" autoplay loop muted playsinline>
-                <source src="images/discordia.mp4" type="video/mp4" />
-                You can't see this on your current browser :(
-            </video>
-            <p>Adding animation to an existing logo with Adobe After Effects.</p>
-            <h2>Storyboard</h2>
-            <img src="images/storyboard.jpg">
+        <h2>Videography</h2>
+        <div class="portfolio-item">
+            <div class="video-item">
+                <p>Pre-production: Storyboarding to prepare for a smoother filming process.</p>
+                <img src="images/storyboard.jpg">
+            </div>
+            <div class="video-item">
+                <p>Post-production: Creating an animation from an existing logo with Adobe After Effects.</p>
+                <video width="300" height="200" autoplay loop muted playsinline>
+                    <source src="images/discordia.mp4" type="video/mp4" />
+                    You can't see this on your current browser :(
+                </video>
+            </div>
         </div>
     </div>
+
+    <!-- To prevent footer from being in the same row as content -->
+    <div class="clearfix"></div>
 
     <ul class="footer">
         <li><a href="https://github.com/limmlingg"><img src="images/github icon.png"><br>GitHub</a></li>
