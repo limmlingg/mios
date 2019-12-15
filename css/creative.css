@@ -23,6 +23,11 @@
     clear: both;
 }
 
+#sorting-song img {
+    width: 200px;
+    height: 200px;
+}
+
 @media (max-width: 800px) {
 	.portfolio {
 		padding: 0% 0%;
