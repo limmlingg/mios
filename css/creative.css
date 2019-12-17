@@ -7,12 +7,7 @@
     display: flex;
 }
 
-.game-art-item {
-    width: 50%;
-    padding: 0% 3%;
-}
-
-.video-item {
+.col-1-2 {
     width: 50%;
     padding: 0% 3%;
 }
@@ -38,12 +33,7 @@
         display: block;
     }
 
-    .game-art-item {
-        width: 100%;
-        padding: 5% 0%;
-    }
-
-    .video-item {
+    .col-1-2 {
         width: 100%;
         padding: 5% 0%;
     }
